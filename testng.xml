@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="sylius">
+    <!--can change the thread count to other value ,support parallel tests -->
+    <test name="Tests" parallel="methods" thread-count="1">
+        <classes>
+            <class name="co.il.evy.tests.RegistrationTest"></class>
+            <class name="co.il.evy.tests.LoginTest"></class>
+            <class name="co.il.evy.tests.CategoriesNavigationTest"></class>
+            <class name="co.il.evy.tests.ProductPageTest"></class>
+            <class name="co.il.evy.tests.AddReviewToProductTest"></class>
+            <class name="co.il.evy.tests.CartPageTest"></class>
+            <class name="co.il.evy.tests.EndToEndTest"></class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="co.il.evy.framework.reporter.CustomReporter"/>
+    </listeners>
+</suite>
