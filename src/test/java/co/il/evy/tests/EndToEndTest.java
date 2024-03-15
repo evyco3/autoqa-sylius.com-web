@@ -39,6 +39,7 @@ public class EndToEndTest extends BaseTest {
                 .setShipment("ups")
                 .setExtraNote(faker.lorem().sentence())
                 .clickPlaceOrderButton()
+                .clickPlaceOrderButton()
                 .getServerResponseMessage();
 
     }
